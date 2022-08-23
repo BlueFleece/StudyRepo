@@ -1,3 +1,8 @@
+// The Truth Counts
+// Write a function, theTruthCounts, that accepts a multi-dimensional array of values as argument. theTruthCounts should return the count of all truthy values inside the multidimensional array.
+
+// theTruthCounts([0, [true, ['yes']]]); // => 2
+
 function theTruthCounts(arr){
   let counter = 0;
   for (let i = 0; i < arr.length; i++){
