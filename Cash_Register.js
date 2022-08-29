@@ -69,8 +69,8 @@ function checkCashRegister(price, cash, cid) {
     for (let i = 0; i < cashReg.length; i++){
       if (change >= currency[i][1] && cashReg[i][1] !== 0){
         change = Math.round((change - currency[i][1])*100)/100
-        cashReg[i][1] = cashReg[i][1] - currency[i][1]
-        totalChange[i][1] = totalChange[i][1] + currency[i][1]
+        cashReg[i][1] -= currency[i][1]
+        totalChange[i][1] += currency[i][1]
         i -= 1
       }
     }
